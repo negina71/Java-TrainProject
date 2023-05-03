@@ -1,0 +1,65 @@
+package com.mci.model;
+
+import com.mci.model.Type.LocomotiveType;
+
+public class Locomotive extends TrainComponents {
+	private LocomotiveType type;
+	private final double MIN_WEIGHT;
+	private final double max_weight = 40000;
+	private final double LENGHT = 10;
+	private double current_weight;
+
+	public Locomotive(String manufacturer, int serialNum, int year, LocomotiveType type) {
+		super(manufacturer, serialNum, year);
+		this.type = type;
+		if (type.equals(LocomotiveType.DIESEL)) {
+			this.MIN_WEIGHT = 25000;
+		} else {
+			this.MIN_WEIGHT = 15000;
+
+		}
+	}
+
+	public Locomotive() {
+		this.MIN_WEIGHT = 0;
+
+	}
+
+	public LocomotiveType getType() {
+		return type;
+	}
+
+	public void setType(LocomotiveType type) {
+		this.type = type;
+	}
+
+	public double getMax_weight() {
+		return max_weight;
+	}
+
+	public double getMIN_WEIGHT() {
+		return MIN_WEIGHT;
+	}
+
+	@Override
+	public double getCurrentWeight() {
+
+		return current_weight + this.MIN_WEIGHT;
+	}
+
+	@Override
+	public double getCurrentLenght() {
+
+		return this.LENGHT;
+	}
+
+	@Override
+	public String toString() {
+		return "Locomotive [type=" + type + ", MIN_WEIGHT=" + MIN_WEIGHT + ", max_weight=" + max_weight + ", LENGHT="
+				+ LENGHT + ", current_weight=" + current_weight + ", getYear()=" + getYear() + ", getManufacturer()="
+				+ getManufacturer() + ", getSerialNum()=" + getSerialNum() + ", getNext()=" + getNext() + ", getPrev()="
+				+ getPrev() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+
+}

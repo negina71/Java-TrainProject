@@ -1,0 +1,104 @@
+package com.mci.model;
+
+public abstract class TrainComponents implements TrainInterface{
+	private String manufacturer;
+	private String serialNum;
+	private int year;
+	private TrainComponents	next=null ;
+	private TrainComponents	prev =null;
+	
+	public TrainComponents(String manufacturer, String serialNum, int year) {
+		this.Manufacturer = manufacturer;
+		this.serialNum = serialNum;
+		this.year = year;
+	}
+	
+	public TrainComponents() {}
+
+    /**
+     * Returns the year in which the train component was manufactured.
+     * @return the year of the train component
+     */
+    public int getYear() {
+        return this.year;
+    }
+
+    /**
+     * Sets the year in which the train component was manufactured.
+     * @param year the year to set
+     */
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    /**
+     * Returns the manufacturer of the train component.
+     * @return the manufacturer of the train component
+     */
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    /**
+     * Sets the manufacturer of the train component.
+     * @param manufacturer the manufacturer to set
+     */
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    /**
+     * Returns the serial number of the train component.
+     * @return the serial number of the train component
+     */
+    public int getSerialNum() {
+        return serialNum;
+    }
+
+    /**
+     * Sets the serial number of the train component.
+     * @param serialNum the serial number to set
+     */
+    public void setSerialNum(int serialNum) {
+        this.serialNum = serialNum;
+    }
+
+    /**
+     * Returns a reference to the next train component in the train, if any.
+     * @return the next train component, or null if this is the last component in the train
+     */
+    public TrainComponents getNext() {
+        return next;
+    }
+
+    /**
+     * Sets a reference to the next train component in the train.
+     * @param next the next train component to set
+     */
+    public void setNext(TrainComponents next) {
+        this.next = next;
+    }
+
+    /**
+     * Returns a reference to the previous train component in the train, if any.
+     * @return the previous train component, or null if this is the first component in the train
+     */
+    public TrainComponents getPrev() {
+        return prev;
+    }
+
+    /**
+     * Sets a reference to the previous train component in the train.
+     * @param prev the previous train component to set
+     */
+    public void setPrev(TrainComponents prev) {
+        this.prev = prev;
+    }
+}
+
+
+
+	
+	
+	
+}

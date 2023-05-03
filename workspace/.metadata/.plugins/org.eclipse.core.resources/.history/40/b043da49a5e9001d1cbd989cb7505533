@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_gxPhoOmkEe2hPbIcr78KsQ" name="Train">
+    <eAnnotations xmi:id="_oGeCwOmkEe2hPbIcr78KsQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_oGeCwemkEe2hPbIcr78KsQ" source="codegen">
+        <details xmi:id="_oGeCwumkEe2hPbIcr78KsQ" key="codegenDirectory" value="/train-project/src/main/java"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_oGf38OmkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf38emkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf38umkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf38-mkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf39OmkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf39emkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_oGf39umkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_oGgfAOmkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_oGgfAemkEe2hPbIcr78KsQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oGFBMOmkEe2hPbIcr78KsQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oGFBMemkEe2hPbIcr78KsQ" name="mci">
+        <packagedElement xmi:type="uml:Package" xmi:id="_oGHdcOmkEe2hPbIcr78KsQ" name="model">
+          <packagedElement xmi:type="uml:Package" xmi:id="_oGIEgOmkEe2hPbIcr78KsQ" name="Type">
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_oI_LQOmkEe2hPbIcr78KsQ" name="LocomotiveType"/>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_x0iDgOmkEe2hPbIcr78KsQ" name="WagonType"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_p_JboOmkEe2hPbIcr78KsQ" name="TrainInterface"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_x0lt4OmkEe2hPbIcr78KsQ" name="TrainComponents"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_x0oKIOmkEe2hPbIcr78KsQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_x0oKIemkEe2hPbIcr78KsQ" name="lang"/>
+    </packagedElement>
+    <profileApplication xmi:id="_oGX8IOmkEe2hPbIcr78KsQ">
+      <eAnnotations xmi:id="_oGa_cOmkEe2hPbIcr78KsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:Reference xmi:id="_oI_yUOmkEe2hPbIcr78KsQ" base_Element="_oI_LQOmkEe2hPbIcr78KsQ"/>
+  <uml:OpaqueBehavior xmi:id="_oJNNsOmkEe2hPbIcr78KsQ" name="getMIN_WEIGHT">
+    <ownedParameter xmi:id="_oJQ4EOmkEe2hPbIcr78KsQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return MIN_WEIGHT;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_oJRfIOmkEe2hPbIcr78KsQ" name="getMax_weight">
+    <ownedParameter xmi:id="_oJRfIemkEe2hPbIcr78KsQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return max_weight;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_p_KCsOmkEe2hPbIcr78KsQ" base_Element="_p_JboOmkEe2hPbIcr78KsQ"/>
+  <UMLLabProfile:Reference xmi:id="_x0iqkOmkEe2hPbIcr78KsQ" base_Element="_x0iDgOmkEe2hPbIcr78KsQ"/>
+  <UMLLabProfile:Reference xmi:id="_x0mU8OmkEe2hPbIcr78KsQ" base_Element="_x0lt4OmkEe2hPbIcr78KsQ"/>
+  <uml:OpaqueBehavior xmi:id="_x0u30OmkEe2hPbIcr78KsQ" name="getMAX_CAPACITY">
+    <ownedParameter xmi:id="_x0u30emkEe2hPbIcr78KsQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return MAX_CAPACITY;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+</xmi:XMI>

@@ -1,0 +1,21 @@
+package test;
+
+public enum Type {
+    LOCOMITIV {
+        @Override
+        public String getPower() {
+            return "ELEKTRO";
+        }
+
+        @Override
+        public int getWagonType() {
+            return 200;
+        }
+    };
+  
+  
+
+    public abstract String getPower();
+
+    public abstract int getWagonType();
+}

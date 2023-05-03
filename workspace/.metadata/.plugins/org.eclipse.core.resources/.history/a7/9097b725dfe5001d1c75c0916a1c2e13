@@ -1,0 +1,23 @@
+package com.mci.model;
+
+public enum Type {
+	WAGON(Wagon.class),
+	LOCOMOTIVE(LocomotiveType.class);
+	
+	private final Class<? extends Enum<?>> nestedEnum;
+	
+	private Type(Class<? extends Enum<?>> nestedEnum) {
+		this.nestedEnum=nestedEnum;
+	}
+	
+	public Enum<?>[] getNestedEnums(){
+		return nestedEnum.getEnumConstants();
+	}
+	
+	public static enum Wagon{
+		PASSENGER,CARGO,TANKER,FLATBED;
+	}
+	 public static enum LocomotiveType{
+		 DIESEL,ELECTRIC,STEAM;
+	 }
+}

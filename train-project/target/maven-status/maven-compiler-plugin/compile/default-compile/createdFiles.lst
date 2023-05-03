@@ -1,0 +1,12 @@
+com\mci\model\Type$LocomotiveType.class
+com\mci\model\Wagon.class
+com\mci\model\TrainComponents.class
+com\mci\controller\App.class
+com\mci\model\Train.class
+com\mci\model\Locomotive.class
+com\mci\model\LocomotiveBuilder.class
+com\mci\model\WagonBuilder.class
+com\mci\model\Type.class
+com\mci\model\Type$WagonType.class
+com\mci\model\TrainCompany.class
+com\mci\model\TrainInterface.class

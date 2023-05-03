@@ -1,0 +1,15 @@
+package test;
+
+public enum Type {
+	WAGON,LOCOMOTIVE,
+
+	public enum WAGON {
+		PASSNGER, CARGO
+	}
+	
+	
+ 
+	public enum LOCOMOTIVE {
+		DIESEL, BENZIN
+	}
+}

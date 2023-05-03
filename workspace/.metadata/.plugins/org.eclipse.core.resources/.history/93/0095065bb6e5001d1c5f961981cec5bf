@@ -1,0 +1,39 @@
+package com.mci.model;
+
+public class WagonBuilder {
+	private Wagon tmpWagon = new Wagon();
+
+	
+
+	public WagonBuilder withManufacturer(String manufacturer) {
+		this.tmpWagon.setManufacturer(manufacturer);
+		return this;
+	}
+	
+	
+	
+	public WagonBuilder withYear(int year) {
+		this.tmpWagon.setYear(year);
+		return this;
+	}
+	
+	
+	
+	public WagonBuilder withSerialNum(int serialNum) {
+		this.tmpWagon.setSerialNum(serialNum);
+	}
+	
+	
+	
+	public WagonBuilder withCapacity(int capacity) {
+		this.tmpWagon.setCapacity(capacity);
+		return this;
+	}
+
+	
+	public Wagon build() {
+		return new Wagon(tmpWagon.getManufacturer(), tmpWagon.getSerialNum(), tmpWagon.getYear(), tmpWagon.getType(),
+				tmpWagon.getCapacity());
+	}
+
+}

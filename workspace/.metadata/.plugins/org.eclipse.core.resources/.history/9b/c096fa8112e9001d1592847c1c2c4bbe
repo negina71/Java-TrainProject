@@ -1,0 +1,27 @@
+package com.mci.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TrainCompany {
+	private String name;
+	private List<Train> trains=new ArrayList<>();
+	
+
+	public TrainCompany(String name) {
+		
+		this.name = name;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "TrainCompany [name=" + name + ", trains=" + trains + "]";
+	}
+
+	public List<Train> getTrains() {
+		return trains;
+	}
+	
+	
+ }

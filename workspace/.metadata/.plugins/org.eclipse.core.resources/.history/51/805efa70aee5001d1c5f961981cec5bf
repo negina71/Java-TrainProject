@@ -1,0 +1,20 @@
+package test;
+
+
+
+public enum Type {
+    WAGON_CARGO("CARGO"),
+    WAGON_PASSENGER("PASSENGER"),
+    LOCOMOTIVE_ELECTRO("ELECTRO"),
+    LOCOMOTIVE_DIESEL("DIESEL");
+
+    private String input;
+
+    public Type(String input) {
+        this.input = input;
+    }
+
+    public String getInput() {
+        return input;
+    }
+}

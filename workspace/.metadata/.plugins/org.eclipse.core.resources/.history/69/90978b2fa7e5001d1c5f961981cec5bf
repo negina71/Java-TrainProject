@@ -1,0 +1,52 @@
+package test;
+
+public enum Type {
+    ELEKTRO {
+        @Override
+        public String getDescription() {
+            return "Electric";
+        }
+
+        @Override
+        public int getMaxSpeed() {
+            return 200;
+        }
+    },
+    DIESEL {
+        @Override
+        public String getDescription() {
+            return "Diesel";
+        }
+
+        @Override
+        public int getMaxSpeed() {
+            return 120;
+        }
+    },
+    PASSENGER {
+        @Override
+        public String getDescription() {
+            return "Passenger";
+        }
+
+        @Override
+        public int getMaxSpeed() {
+            return 180;
+        }
+    },
+    CARGO {
+        @Override
+        public String getDescription() {
+            return "Cargo";
+        }
+
+        @Override
+        public int getMaxSpeed() {
+            return 100;
+        }
+    };
+
+    public abstract String getDescription();
+
+    public abstract int getMaxSpeed();
+}

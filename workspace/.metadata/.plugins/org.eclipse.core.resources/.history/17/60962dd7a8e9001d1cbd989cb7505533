@@ -1,0 +1,33 @@
+package com.mci.model;
+
+import com.mci.model.Type.LocomotiveType;
+import com.mci.model.Type.WagonType;
+
+public class Locomotive extends TrainComponents {
+	
+	
+	private double	current_weight ;
+	private double	LENGHT ;
+	private double	max_weight ;
+	private double	MIN_WEIGHT ;
+	private Type.LocomotiveType	type ;
+	
+	
+	public Locomotive(String manufacturer, String serialNum, int year, LocomotiveType type) {
+		super(manufacturer, serialNum, year);
+		this.type = type;
+	}
+
+	@Override
+	public double getCurrentWeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getCurrentLenght() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

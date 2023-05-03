@@ -1,0 +1,5 @@
+package com.mci.model.enums;
+
+public enum PowerType {
+	ELECRTO,PETROL,DIESEL
+}

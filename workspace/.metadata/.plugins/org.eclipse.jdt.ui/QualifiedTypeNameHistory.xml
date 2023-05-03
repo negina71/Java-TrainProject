@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mci.model.Wagon2"/>
+    <fullyQualifiedTypeName name="com.mci.model.Type.Wagon"/>
+    <fullyQualifiedTypeName name="com.mci.model.TrainType"/>
+    <fullyQualifiedTypeName name="com.mci.model.Type"/>
+    <fullyQualifiedTypeName name="java.awt.desktop.AppForegroundListener"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.mci.model.Train"/>
+    <fullyQualifiedTypeName name="com.mci.model.WagonBuilder"/>
+    <fullyQualifiedTypeName name="com.mci.model.Wagon"/>
+    <fullyQualifiedTypeName name="com.mci.model.TrainCompany"/>
+    <fullyQualifiedTypeName name="com.mci.model.Locomotive"/>
+    <fullyQualifiedTypeName name="com.mci.model.LocomotiveBuilder"/>
+    <fullyQualifiedTypeName name="com.mci.model.TrainInterface"/>
+    <fullyQualifiedTypeName name="com.mci.model.TrainComponents"/>
+    <fullyQualifiedTypeName name="com.mci.model.Type.LocomotiveType"/>
+    <fullyQualifiedTypeName name="com.mci.model.Type.WagonType"/>
+</qualifiedTypeNameHistroy>

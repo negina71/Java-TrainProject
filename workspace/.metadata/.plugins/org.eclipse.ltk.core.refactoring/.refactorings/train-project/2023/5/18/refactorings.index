@@ -1,0 +1,13 @@
+1682934873501	Rename field 'weight'
+1682934895021	Rename field 'lenght'
+1682941442914	Rename field 'max_weight'
+1682942003159	Rename field 'capacity'
+1682942016655	Rename field 'passenger'
+1682942046550	Rename field 'passengers'
+1682942170693	Rename method 'getCapacity'
+1682964170502	Rename local variable 'locomotive22'
+1682964181013	Rename local variable 'train22'
+1682964191867	Rename local variable 'wagon22'
+1683057547347	Rename method 'removeLastTail'
+1683113447886	Delete element
+1683118711702	Delete element

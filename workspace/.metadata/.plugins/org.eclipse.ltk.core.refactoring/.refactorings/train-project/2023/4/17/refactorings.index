@@ -1,0 +1,20 @@
+1682632846034	Rename field 'w'
+1682682238168	Rename type 'Type'
+1682682611761	Delete element
+1682693421649	Delete element
+1682693443020	Rename type 'PowerType'
+1682693452531	Move compilation unit
+1682693458076	Delete element
+1682697369511	Rename type 'Wagon'
+1682697383071	Rename type 'Locomotive'
+1682698196094	Rename type 'WagonType'
+1682698209175	Rename type 'LocomotiveType'
+1682750619480	Rename type 'Wagon'
+1682750757409	Rename type 'Locomotive'
+1682750931962	Delete element
+1682751641028	Rename type 'Type'
+1682751981778	Rename type 'TrainType'
+1682890444279	Rename local variable 'component'
+1682890453865	Rename local variable 'com'
+1682894876573	Rename local variable 'c'
+1682896155682	Rename field 'counterOfWagon'

@@ -1,0 +1,22 @@
+package test;
+
+public enum Type {
+    LOCOMITIV {
+        @Override
+        public String getDescription() {
+            return "ELEKTRO";
+        }
+
+        @Override
+        public int getMaxSpeed() {
+            return 200;
+        }
+    }
+   
+  
+  
+
+    public abstract String getDescription();
+
+    public abstract int getMaxSpeed();
+}

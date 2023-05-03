@@ -1,0 +1,36 @@
+package com.mci.model;
+
+
+public class WagonBuilder  {
+    private Wagon tmpWagon=new Wagon();
+
+
+  
+
+    public WagonBuilder withCapacity(int capacity) {
+        this.tmpWagon.setCapacity(capacity);
+        return this;
+    }
+
+    public WagonBuilder withWeight(double weight) {
+        this.tmpWagon.setWeight(weight);
+        return this;
+      }
+    
+     
+    
+      public WagonBuilder withLenght(double lenght) {
+        this.tmpWagon.setLenght(lenght);
+        return this;
+      } 
+      
+      public WagonBuilder withManufacturer(String manufacturer) {
+    		this.tmpWagon.setManufacturer(manufacturer);
+    		return this;
+    	}
+   
+public Wagon build(){
+    return new Wagon(tmpWagon.getWeight(), tmpWagon.getLenght(), tmpWagon.getCapacity());
+}
+
+}

@@ -1,0 +1,8 @@
+package com.mci.model;
+
+public class Wagon2 {
+ private Type type;
+public Wagon2(Type type) {
+	this.type=type;
+}
+}

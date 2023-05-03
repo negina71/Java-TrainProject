@@ -1,0 +1,5 @@
+package com.mci.model;
+
+public class Wagon extends TrainComponents{
+
+}

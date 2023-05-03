@@ -1,0 +1,55 @@
+package com.mci.model;
+
+public abstract class TrainComponents {
+
+	private int year;
+	private String manufacturer;
+	private int serialNum;
+	private TrainComponents next = null;
+
+	public TrainComponents(String manufacturer, int serialNum, int year) {
+		this.manufacturer = manufacturer;
+		this.serialNum = serialNum;
+		this.year = year;
+
+	}
+
+	public TrainComponents() {
+	}
+
+	public int getYear() {
+		return this.year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public String getManufacturer() {
+		return manufacturer;
+	}
+
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
+
+	public int getSerialNum() {
+		return serialNum;
+	}
+
+	public void setSerialNum(int serialNum) {
+		this.serialNum = serialNum;
+	}
+
+	public TrainComponents getNext() {
+		return next;
+	}
+
+	public void setNext(TrainComponents next) {
+		this.next = next;
+	}
+	
+	public abstract double getCurrentWeight();
+	public abstract double getCurrentLenght();
+
+}

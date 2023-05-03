@@ -1,0 +1,23 @@
+package com.mci.model;
+
+public enum Type {
+	List(Wagon.PASSENGER, Wagon.CARGO, Locomotive.ELECTRO, Locomotive.DIESEL, Locomotive.PETROL);
+
+	private final Enum<?>[] enums;
+
+	Type(Enum<?>... enums) {
+		this.enums = enums;
+	}
+
+	public Enum<?>[] getEnums() {
+		return enums;
+	}
+
+	public enum Wagon {
+		PASSENGER, CARGO
+	}
+
+	public enum Locomotive {
+		ELECTRO, DIESEL, PETROL
+	}
+}

@@ -1,0 +1,12 @@
+package com.mci.model;
+
+public enum Type {
+	WAGON(Wagon.class),
+	LOCOMOTIVE(Lokomotive.class);
+	
+	private final Class<? extends Enum<?>> nestedEnum;
+	
+	private Tpye(Class<? extends Enum<?>> nestedEnum) {
+		this.nestedEnum=nestedEnum;
+	}
+}
