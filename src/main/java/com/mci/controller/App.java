@@ -1,11 +1,12 @@
 package com.mci.controller;
 
+import java.lang.annotation.Target;
 import java.util.List;
 
 import com.mci.model.Locomotive;
 import com.mci.model.LocomotiveBuilder;
 import com.mci.model.Train;
-import com.mci.model.TrainCompany;
+
 import com.mci.model.TrainComponents;
 import com.mci.model.Type.LocomotiveType;
 import com.mci.model.Type.WagonType;
@@ -21,26 +22,23 @@ public class App {
 				.withType(WagonType.PASSENGER).build();
 		Wagon w2 = new WagonBuilder().withManufacturer("ÖBB").withSerialNum("102").withYear(1910)
 				.withType(WagonType.CARGO).build();
-
+		Locomotive locTail = new LocomotiveBuilder().withManufacturer("ÖBB").withSerialNum("104").withYear(1900)
+				.withType(LocomotiveType.DIESEL).build();
 		// Train
 		Train train = new Train(locHead);
 		train.add(w1);
 		train.add(w2);
-		// new Locomotive
-		Locomotive loc2 = new LocomotiveBuilder().withManufacturer("ÖBB").withSerialNum("104").withYear(1900)
-				.withType(LocomotiveType.DIESEL).build();
-		train.add(loc2);
+		train.add(locTail);
+		
+		for (TrainComponents element : train.getElements()) {
+			if (element instanceof Wagon) {
+				Wagon wagon = (Wagon) element;
+				System.out.println(wagon.getType());
+			} else {
+				Locomotive loc = (Locomotive) element;
+				System.out.println(loc.getType());
+			}
+		}
 
-		System.out.println("num of loc :" + train.getCounterOfLocomotive());
-		System.out.println("num of wagon :" + train.getCounterOfWagon());
-		System.out.println(train.getSize());
-		train.removeLast();
-		System.out.println("num of loc :" + train.getCounterOfLocomotive());
-		System.out.println("num of wagon :" + train.getCounterOfWagon());
-		System.out.println(train.getSize());
-
-		System.out.println("num of loc :" + train.getCounterOfLocomotive());
-		System.out.println("num of wagon :" + train.getCounterOfWagon());
-		System.out.println(train.getSize());
 	}
 }

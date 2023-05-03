@@ -25,7 +25,7 @@ public class TrainCompany {
 	public void addTrain(Train train) {
 		trains.add(train);
 
-	};
+	}
 
 	public void removeTrain(String serialNum) {
 

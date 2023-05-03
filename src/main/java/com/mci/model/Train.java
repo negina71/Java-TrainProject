@@ -1,5 +1,8 @@
 package com.mci.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Train {
 
 	private TrainComponents head = null;
@@ -9,11 +12,16 @@ public class Train {
 	private int counterOfLocomotive;
 	private boolean active = false;
 	private double lenght = 0;
+	private List<TrainComponents> elements = new ArrayList<TrainComponents>();
 
 	public Train(Locomotive locomotive) {
 		this.head = locomotive;
 		this.tail = locomotive;
-		this.size++;
+		initTrain();
+	}
+
+	private void initTrain() {
+		this.size = 1;
 		this.active = true;
 		this.counterOfLocomotive = 1;
 	}
@@ -46,12 +54,24 @@ public class Train {
 			counterOfLocomotive++;
 		}
 		size++;
+
+	}
+
+	public List<TrainComponents> getElements() {
+		TrainComponents curent = this.head;
+		while (curent.getNext() != null) {
+			this.elements.add(curent);
+			curent = curent.getNext();
+		}
+		this.elements.add(curent);
+
+		return this.elements;
+
 	}
 
 	public void removeLast() {
-		if (head == tail) {
-			head = null;
-			tail = null;
+		if (this.getSize() == 1) {
+			throw new IllegalStateException("The train cannot be empty. There must be at least one locomotive!");
 		} else {
 			TrainComponents current = head;
 			while (current.getNext() != tail) {
@@ -59,12 +79,6 @@ public class Train {
 			}
 			current.setNext(null);
 			tail = current;
-			if(tail instanceof Locomotive ) {
-				counterOfLocomotive--;
-			}
-			else {
-				counterOfWagon--;
-			}
 		}
 		size--;
 	}
