@@ -35,7 +35,6 @@ public class Train {
 		if (head == null) {
 			head = (Locomotive) component;
 			tail = (Locomotive) component;
-
 		} else {
 			tail.setNext(component);
 			tail = component;
@@ -60,6 +59,12 @@ public class Train {
 			}
 			current.setNext(null);
 			tail = current;
+			if(tail instanceof Locomotive ) {
+				counterOfLocomotive--;
+			}
+			else {
+				counterOfWagon--;
+			}
 		}
 		size--;
 	}
@@ -81,7 +86,6 @@ public class Train {
 			current = current.getNext();
 		}
 		return weight;
-
 	}
 
 	private void initLenght() {
@@ -90,7 +94,6 @@ public class Train {
 			this.lenght += current.getCurrentLenght();
 			current = current.getNext();
 		}
-
 	}
 
 	public TrainComponents getHead() {

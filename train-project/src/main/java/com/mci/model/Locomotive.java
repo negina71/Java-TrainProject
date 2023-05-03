@@ -31,21 +31,14 @@ public class Locomotive extends TrainComponents {
 	}
 
 	public double getMax_weight() {
-		return 40000.0D;
+		return 40000;
 	}
 
 	public double getMIN_WEIGHT() {
 		return this.MIN_WEIGHT;
 	}
 
-	public double getCurrentWeight() {
-		return this.current_weight + getMIN_WEIGHT();
-	}
-
-	public double getCurrentLenght() {
-		getClass();
-		return 10.0D;
-	}
+	
 
 	public String toString() {
 		return "Locomotive [type=" + this.type + ", MIN_WEIGHT=" + this.MIN_WEIGHT + ", max_weight=" + 40000.0D
@@ -53,5 +46,17 @@ public class Locomotive extends TrainComponents {
 				+ ", getManufacturer()=" + getManufacturer() + ", getSerialNum()=" + getSerialNum() + ", getNext()="
 				+ getNext() + ", getPrev()=" + getPrev() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ ", toString()=" + super.toString() + "]";
+	}
+
+	@Override
+	public double getCurrentWeight() {
+	
+		return  this.current_weight + getMIN_WEIGHT();
+	}
+
+	@Override
+	public double getCurrentLenght() {
+		
+		return this.LENGHT;
 	}
 }

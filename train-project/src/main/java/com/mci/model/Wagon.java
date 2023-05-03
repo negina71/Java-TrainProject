@@ -36,15 +36,19 @@ public class Wagon extends TrainComponents {
 
 	public void addPassanger() throws IllegalArgumentException {
 		if (getType().equals(Type.WagonType.PASSENGER)) {
-			if (getMAX_CAPACITY() >= getPassengers())
+			if (getMAX_CAPACITY() >= getPassengers()) {
 				this.counterOfPassengers++;
-			throw new IllegalArgumentException("PASSENGER Capacity has already reached the maximum value.");
+			} else {
+				throw new IllegalArgumentException("PASSENGER Capacity has already reached the maximum value.");
+			}
+		} else {
+			throw new IllegalArgumentException(
+					"addPassanger method is only for PassangerWagon, you should use addCargo.");
 		}
-		throw new IllegalArgumentException("addPassanger method is only for PassangerWagon, you should use addCargo.");
 	}
 
 	public double getCurrentCapacity() {
-		double result = 0.0D;
+		double result = 0;
 		if (getType().equals(Type.WagonType.PASSENGER)) {
 			result = (getMAX_CAPACITY() - getPassengers());
 		} else {
@@ -86,14 +90,6 @@ public class Wagon extends TrainComponents {
 		return this.MIN_WEIGHT;
 	}
 
-	public double getCurrentWeight() {
-		return this.current_weight + getMIN_WEIGHT();
-	}
-
-	public double getCurrentLenght() {
-		return this.LENGHT;
-	}
-
 	public String toString() {
 		return "Wagon [counterOfPassengers=" + this.counterOfPassengers + ", MAX_CAPACITY=" + this.MAX_CAPACITY
 				+ ", type=" + this.type + ", MIN_WEIGHT=" + this.MIN_WEIGHT + ", current_weight=" + this.current_weight
@@ -101,5 +97,16 @@ public class Wagon extends TrainComponents {
 				+ ", getSerialNum()=" + getSerialNum() + ", getNext()=" + getNext() + ", getPrev()=" + getPrev()
 				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
 				+ "]";
+	}
+
+	@Override
+	public double getCurrentWeight() {
+		return this.current_weight + getMIN_WEIGHT();
+
+	}
+
+	@Override
+	public double getCurrentLenght() {
+		return  this.LENGHT;
 	}
 }
