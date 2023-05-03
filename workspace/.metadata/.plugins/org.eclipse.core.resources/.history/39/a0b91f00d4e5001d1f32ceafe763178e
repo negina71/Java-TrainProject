@@ -1,7 +1,0 @@
-package com.mci.model.enums;
-
-public enum WagonType {
-	
-	PASSANGER,CARGO
-
-}

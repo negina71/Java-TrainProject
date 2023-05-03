@@ -1,8 +1,0 @@
-package com.mci.model;
-
-public abstract class TrainComponents implements TrainInterface{
-	private String Manufacturer;
-	private String serialNum;
-	private int year;
-	
-}

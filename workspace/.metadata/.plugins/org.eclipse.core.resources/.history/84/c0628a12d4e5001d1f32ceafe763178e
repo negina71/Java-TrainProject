@@ -1,5 +1,0 @@
-package com.mci.model.enums;
-
-public enum Type {
-	ELECRTO,PETROL,DIESEL
-}

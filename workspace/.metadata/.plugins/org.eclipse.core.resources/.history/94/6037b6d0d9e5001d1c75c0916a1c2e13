@@ -1,5 +1,0 @@
-package com.mci.model;
-
-public class Wagon2 {
- private Type type;
-}
